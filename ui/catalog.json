@@ -1,0 +1,115 @@
+{
+  "tweaks": [
+    {
+      "id": "game-mode",
+      "name": "Windows Game Mode",
+      "category": "Gaming",
+      "description": "Let Windows prioritize your game and reduce interruptions during play.",
+      "path": "Software\\Microsoft\\GameBar",
+      "key": "AutoGameModeEnabled",
+      "value": 1,
+      "risk": "Low",
+      "note": "Uses the Windows Game Mode preference. Results depend on workload."
+    },
+    {
+      "id": "game-capture",
+      "name": "Background game recording",
+      "category": "Gaming",
+      "description": "Turn off background capture when you do not need gameplay recordings.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR",
+      "key": "AppCaptureEnabled",
+      "value": 0,
+      "risk": "Low",
+      "note": "Disables app capture. Existing recordings are kept."
+    },
+    {
+      "id": "mouse-accel",
+      "name": "Consistent mouse movement",
+      "category": "Input",
+      "description": "Disable Enhance pointer precision for a predictable desktop pointer response.",
+      "path": "Control Panel\\Mouse",
+      "key": "MouseSpeed",
+      "value": "0",
+      "kind": "String",
+      "risk": "Low",
+      "note": "Sign out and back in to apply. Games with raw input usually ignore this preference."
+    },
+    {
+      "id": "transparency",
+      "name": "Reduce transparency",
+      "category": "Windows",
+      "description": "Use opaque Windows surfaces to reduce visual effects.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+      "key": "EnableTransparency",
+      "value": 0,
+      "risk": "Low",
+      "note": "A visual preference; no FPS improvement is guaranteed."
+    },
+    {
+      "id": "ads",
+      "name": "Advertising ID",
+      "category": "Privacy",
+      "description": "Stop apps from using your Windows advertising ID for personalized ads.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
+      "key": "Enabled",
+      "value": 0,
+      "risk": "Low",
+      "note": "Does not disable Windows security, updates, or required diagnostic data."
+    },
+    {
+      "id": "suggestions",
+      "name": "Suggested content",
+      "category": "Privacy",
+      "description": "Reduce suggested content in the Windows Settings app.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "key": "SubscribedContent-338393Enabled",
+      "value": 0,
+      "risk": "Moderate",
+      "note": "Windows-version dependent. This preference may be reset by feature updates."
+    },
+    {
+      "id": "file-extensions",
+      "name": "Show file extensions",
+      "category": "Windows",
+      "description": "See full file names in Explorer so file types are easier to identify.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "key": "HideFileExt",
+      "value": 0,
+      "risk": "Low",
+      "note": "Reopen Explorer windows to see the change."
+    },
+    {
+      "id": "taskbar-animation",
+      "name": "Reduce taskbar animations",
+      "category": "Windows",
+      "description": "Simplify taskbar motion for a quieter desktop.",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "key": "TaskbarAnimations",
+      "value": 0,
+      "risk": "Low",
+      "note": "Sign out and back in to apply. Availability varies with Windows build."
+    },
+    {
+      "id": "menu-delay",
+      "name": "Faster menu opening",
+      "category": "Input",
+      "description": "Set the desktop menu display delay to 200 milliseconds.",
+      "path": "Control Panel\\Desktop",
+      "key": "MenuShowDelay",
+      "value": "200",
+      "kind": "String",
+      "risk": "Low",
+      "note": "Sign out and back in to apply. This changes menu timing, not game latency."
+    },
+    {
+      "id": "power",
+      "name": "High performance power plan",
+      "category": "Performance",
+      "description": "Prefer performance over power savings using the built-in Windows plan.",
+      "type": "power",
+      "value": "8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c",
+      "risk": "Moderate",
+      "note": "Higher power use, heat, and battery drain. Only available when the plan exists on this PC."
+    }
+  ]
+}
